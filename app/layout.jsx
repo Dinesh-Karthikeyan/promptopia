@@ -1,3 +1,4 @@
+import Nav from '@components/Nav'
 import '@styles/globals.css'
 import { Children } from 'react'
 
@@ -6,14 +7,15 @@ export const metadata = {
     description: "Discover and share AI prompts",
 }
 
-const RootLayout = ({children}) => {
+const RootLayout = ({ children }) => {
     return (
         <html lang='en'>
             <body>
                 <div className='main'>
-                    <div className='gradient'/>
-                </div>  
+                    <div className='gradient' />
+                </div>
                 <main className='app'>
+                    <Nav />
                     {children}
                 </main>
             </body>
