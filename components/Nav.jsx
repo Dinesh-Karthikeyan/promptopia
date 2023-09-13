@@ -83,6 +83,7 @@ const Nav = () => {
               height={37}
               alt='Profile Image'
               onClick={() => { setToggleDropdown((prev) => !prev) }}
+              className='rounded-full'
             />
             {toggleDropdown && (
               <div className='absolute right-0 mt-2 bg-white min-w-[200px] flex flex-col gap-3 items-end rounded-lg p-4 font-inte font-mediumr'>
