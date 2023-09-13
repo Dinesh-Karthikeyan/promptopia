@@ -13,7 +13,7 @@ export const POST = async (req)=> {
         // })
         
         // await newPrompt.save()
-        
+        await connectToDB()
         await Prompt.create({
             creator: userId,
             prompt,
